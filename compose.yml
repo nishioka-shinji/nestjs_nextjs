@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: ./backend/docker/Dockerfile
     ports:
-      - "3000:3000"
+      - "3005:3000"
     command: [ "yarn", "start:dev" ]
     volumes:
       - ./backend:/app
