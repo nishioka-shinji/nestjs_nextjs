@@ -9,7 +9,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({isGrobal: true}),
+    ConfigModule.forRoot({ isGlobal: true }),
     UserModule,
     AuthModule,
     TodoModule,
@@ -18,4 +18,4 @@ import { ConfigModule } from '@nestjs/config';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
